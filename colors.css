@@ -1,0 +1,15 @@
+.header {
+    background-color: salmon;
+}
+.mheader {
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    /*change font*/
+}
+
+.sheader {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
