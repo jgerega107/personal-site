@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="colors.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -92,20 +91,21 @@
 
     <div
       id="carouselProjects"
-      class="carousel slide"
+      class="carousel carousel-dark slide"
       data-bs-ride="carousel"
-      style="width: 70%; margin: auto"
+      style="width: 90%; margin: auto"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="false">
           <div class="container">
             <div class="row">
               <div class="col-sm-auto">
-                <img src="ihaha.png" style="width: 200px; height: auto" />
+                <img src="ihaha.gif" style="width: 300px; height: auto" />
               </div>
               <div class="col">
-                <p>
-                  High school joke turned into a fully functional social media
+                <h1 style="font-size: 50px;">iHaha</h1>
+                <p style="font-size: 30px;">
+                  With a namesake started from a high school joke turned into a fully functional social media
                   application, written in Java and based entirely upon Google
                   Firebase, for Android.
                 </p>
@@ -113,14 +113,15 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="false">
           <div class="container">
             <div class="row">
               <div class="col-sm-auto">
-                <img src="flutter.png" style="width: 200px; height: auto" />
+                <img src="openchat.gif" style="width: 300px; height: auto" />
               </div>
               <div class="col">
-                <p>
+                <h1 style="font-size: 50px;">openchat</h1>
+                <p style="font-size: 30px;">
                   Work in progress social media application, written in Dart
                   using Google's Flutter cross-platform framework. Based
                   entirely upon Google Firebase.
@@ -129,14 +130,16 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="false">
           <div class="container">
             <div class="row">
               <div class="col-sm-auto">
-                <img src="flutter.png" style="width: 200px; height: auto" />
+                <img src="covidapp.gif" style="width: 300px; height: auto" />
               </div>
               <div class="col">
-                <p>COVID App</p>
+                <h1 style="font-size: 50px;">COVID Checklist</h1>
+                <p style="font-size: 30px;">
+                Fully functional COVID-19 support application, with symptom checklist, a functional chatroom for chatting with health specialists, and a testing location finder via Google Maps.</p>
               </div>
             </div>
           </div>
@@ -147,6 +150,7 @@
         href="#carouselProjects"
         role="button"
         data-bs-slide="prev"
+        style="color: black;"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -168,87 +172,84 @@
           <h1>Other work</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="accordion" id="miscWork">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Java
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#miscWork"
+      <div class="accordion" id="miscWork" style="margin-bottom: 50px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
             >
-              <div class="accordion-body">
-                <div class="row">
-                  <div class="col-auto">
-                    <div class="card" style="width: 18rem;">
-                      <img src="github.png" class="card-img-top" />
-                      <div class="card-body">
-                        <h5 class="card-title">cs284</h5>
-                        <p class="card-text">
-                          This repository contains all of my work in Java
-                          relating to data structures and elementary sorting
-                          algorithms.
-                        </p>
-                        <a
-                          href="https://github.com/jgerega107/cs284"
-                          class="btn btn-primary"
-                          >Github</a
-                        >
-                      </div>
+              Java
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#miscWork"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs284</h5>
+                      <p class="card-text">
+                        This repository contains all of my work in Java relating
+                        to data structures and elementary sorting algorithms.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs284"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
                     </div>
                   </div>
-                  <div class="col-auto">
-                    <div class="card" style="width: 18rem;"">
-                      <img src="ihaha.png" class="card-img-top" />
-                      <div class="card-body">
-                        <h5 class="card-title">iHaha</h5>
-                        <p class="card-text">
-                          My largest personal project, a fully functional
-                          messaging application with a great foundation for
-                          future improvement.
-                        </p>
-                        <a
-                          href="https://github.com/jgerega107/iHaha"
-                          class="btn btn-primary"
-                          >Github</a
-                        >
-                      </div>
+                </div>
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="ihaha.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">iHaha</h5>
+                      <p class="card-text">
+                        My largest personal project, a fully functional
+                        messaging application with a great foundation for future
+                        improvement.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/iHaha"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
                     </div>
                   </div>
-                  <div class="col-auto">
-                    <div class="card" style="width: 18rem;">
-                      <img src="covid.png" class="card-img-top" />
-                      <div class="card-body">
-                        <h5 class="card-title">COVID Checklist</h5>
-                        <p class="card-text">
-                          A hackathon project my friend and I created in order
-                          to serve as a fully functional COVID-19 support
-                          application, complete with a symptom checklist, a
-                          chatroom to talk with health professionals, and more.
-                        </p>
-                        <a
-                          href="https://github.com/jgerega107/covidapp"
-                          class="btn btn-primary"
-                          >Github</a
-                        >
-                        <a
-                          href="https://devpost.com/software/covid-checklist"
-                          class="btn btn-primary"
-                          >Devpost</a
-                        >
-                      </div>
+                </div>
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="covid.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">COVID Checklist</h5>
+                      <p class="card-text">
+                        A hackathon project my friend and I created in order to
+                        serve as a fully functional COVID-19 support
+                        application, complete with a symptom checklist, a
+                        chatroom to talk with health professionals, and more.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/covidapp"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                      <a
+                        href="https://devpost.com/software/covid-checklist"
+                        class="btn btn-primary" target="_blank"
+                        >Devpost</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -283,13 +284,11 @@
                     <div class="card-body">
                       <h5 class="card-title">cs115</h5>
                       <p class="card-text">
-                        This repository contains all of my work in Python
-                        relating to some more elementary algorithms as well as
-                        school related projects.
+                        This repository contains target="_blank"ts.
                       </p>
                       <a
                         href="https://github.com/jgerega107/cs115"
-                        class="btn btn-primary"
+                        class="btn btn-primary" target="_blank"
                         >Github</a
                       >
                     </div>
@@ -299,166 +298,227 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              C++
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#miscWork"
           >
-            C++
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#miscWork"
-        >
-          <div class="accordion-body">
-            <div class="row">
-              <div class="col-auto">
-                <div class="card" style="width: 18rem">
-                  <img src="github.png" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">cs385</h5>
-                    <p class="card-text">
-                      This repository contains all of my work in C++ relating to
-                      more advanced sorting and searching algorithms, as well as
-                      work with references and pointers.
-                    </p>
-                    <a
-                      href="https://github.com/jgerega107/cs385"
-                      class="btn btn-primary"
-                      >Github</a
-                    >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs385</h5>
+                      <p class="card-text">
+                        This repository contains all of my work in C++ relating
+                        to more advanced sorting and searching algorithms, as
+                        well as work with references and pointers.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs385"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseFour"
-            aria-expanded="false"
-            aria-controls="collapseFour"
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Dart
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#miscWork"
           >
-            Dart
-          </button>
-        </h2>
-        <div
-          id="collapseFour"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingFour"
-          data-bs-parent="#miscWork"
-        >
-          <div class="accordion-body">
-            <div class="row">
-              <div class="col-auto">
-                <div class="card" style="width: 18rem">
-                  <img src="flutter.png" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">openchat</h5>
-                    <p class="card-text">
-                      A work in progress social media app, inspired by the shortcomings of my previous app, written using Flutter framework.
-                    </p>
-                    <a
-                      href="https://github.com/jgerega107/openchat"
-                      class="btn btn-primary"
-                      >Github</a
-                    >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="flutter.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">openchat</h5>
+                      <p class="card-text">
+                        A work in progress social media app, inspired by the
+                        shortcomings of my previous app, written using Flutter
+                        framework.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/openchat"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseFive"
-            aria-expanded="false"
-            aria-controls="collapseFive"
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              HTML/CSS/JS
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#miscWork"
           >
-            ARMv8 Assembly
-          </button>
-        </h2>
-        <div
-          id="collapseFive"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingFive"
-          data-bs-parent="#miscWork"
-        >
-          <div class="accordion-body">
-            <div class="row">
-              <div class="col-auto">
-                <div class="card" style="width: 18rem">
-                  <img src="github.png" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">cs383</h5>
-                    <p class="card-text">
-                      This repository contains all of my work in ARMv8/LEGv8 assembly.
-                    </p>
-                    <a
-                      href="https://github.com/jgerega107/cs383"
-                      class="btn btn-primary"
-                      >Github</a
-                    >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs146-ecophilium</h5>
+                      <p class="card-text">
+                        This repository contains an example website a few friends and I put together for our college web development class.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs146-ecophilium"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs146</h5>
+                      <p class="card-text">
+                        This repository contains an example website a few friends and I put together for our college web development class.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs146-ecophilium"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseSix"
-            aria-expanded="false"
-            aria-controls="collapseSix"
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              ARMv8 Assembly
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#miscWork"
           >
-            Racket
-          </button>
-        </h2>
-        <div
-          id="collapseSix"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingSix"
-          data-bs-parent="#miscWork"
-        >
-          <div class="accordion-body">
-            <div class="row">
-              <div class="col-auto">
-                <div class="card" style="width: 18rem">
-                  <img src="github.png" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">cs135</h5>
-                    <p class="card-text">
-                      This repository contains all of my work in Racket regarding boolean operations and discrete structures.
-                    </p>
-                    <a
-                      href="https://github.com/jgerega107/cs135"
-                      class="btn btn-primary"
-                      >Github</a
-                    >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs383</h5>
+                      <p class="card-text">
+                        This repository contains all of my work in ARMv8/LEGv8
+                        assembly.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs383"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              Racket
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#miscWork"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="card" style="width: 18rem">
+                    <img src="github.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">cs135</h5>
+                      <p class="card-text">
+                        This repository contains all of my work in Racket
+                        regarding boolean operations and discrete structures.
+                      </p>
+                      <a
+                        href="https://github.com/jgerega107/cs135"
+                        class="btn btn-primary" target="_blank"
+                        >Github</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
