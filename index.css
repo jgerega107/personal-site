@@ -3,13 +3,8 @@
 }
 
 .me{
-    height: 800px; width: auto; border-radius: 50px; margin-bottom: 20px;
+    height: 700px; width: auto; border-radius: 50px; margin-bottom: 20px;
 }
-@media (max-width: 1885px) {
-    .me {
-        height: 700px; width: auto; border-radius: 50px; margin-bottom: 20px;
-    }
-  }
 @media (max-width: 1680px) {
     .me {
         height: 600px; width: auto; border-radius: 50px; margin-bottom: 20px;
